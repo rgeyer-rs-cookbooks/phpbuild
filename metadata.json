@@ -1,0 +1,44 @@
+{
+  "name": "phpbuild",
+  "description": "Installs/Configures phpbuild",
+  "long_description": "# phpenv cookbook [![Build Status](https://secure.travis-ci.org/rgeyer-rs-cookbooks/phpenv.png?branch=master)](http://travis-ci.org/rgeyer-rs-cookbooks/phpenv)\n\n## Description\n\nInstalls phpenv to the \"current\" user environment\n\n## Requirements\n\n## Attributes\n\n## Usage\n\n",
+  "maintainer": "Ryan J. Geyer",
+  "maintainer_email": "me@ryangeyer.com",
+  "license": "All rights reserved",
+  "platforms": {
+    "mac_os_x": ">= 0.0.0"
+  },
+  "dependencies": {
+    "rightscale": ">= 0.0.0"
+  },
+  "recommendations": {
+  },
+  "suggestions": {
+  },
+  "conflicting": {
+  },
+  "providing": {
+  },
+  "replacing": {
+  },
+  "attributes": {
+    "phpbuild/install_dir": {
+      "display_name": "PHP-Build Install Directory",
+      "required": "optional",
+      "choice": [
+
+      ],
+      "calculated": false,
+      "type": "string",
+      "recipes": [
+
+      ]
+    }
+  },
+  "groupings": {
+  },
+  "recipes": {
+    "phpbuild::install": "Installs phpbuild to the specified location"
+  },
+  "version": "0.0.1"
+}

@@ -17,6 +17,13 @@
 
 rightscale_marker :begin
 
+# TODO: Could probably install pre-reqs for other OS's
+if node['platform'] == 'mac_os_x'
+  %w{jpeg libpng mcrypt imagemagick gd libtool libxml2 autoconf}.each do |p|
+    package p
+  end
+end
+
 tempdir = ::File.join(Chef::Config['file_cache_path'], 'phpbuild')
 unless ::File.directory?(node['phpbuild']['install_dir'])
   git tempdir do
